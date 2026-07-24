@@ -1,0 +1,8 @@
+source_materials/
+tmp/
+.DS_Store
+Thumbs.db
+.env
+node_modules/
+dist/
+build/
