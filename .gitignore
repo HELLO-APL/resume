@@ -1,8 +1,54 @@
+# Project source materials and temporary files
 source_materials/
 tmp/
+
+# Local system files
 .DS_Store
 Thumbs.db
-.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and caches
+coverage
+*.lcov
+.nyc_output
+.cache
+.parcel-cache
+.eslintcache
+.stylelintcache
+
+# Dependency directories
 node_modules/
+jspm_packages/
+web_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build output
 dist/
 build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.docusaurus/
+**/.vitepress/dist
+**/.vitepress/cache
