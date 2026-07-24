@@ -46,7 +46,7 @@ AI 协助完成了作业要求梳理、材料抽取、页面结构建议、静�
 - GitHub Pages 公开页面或部署成功截图；
 - Checklist 完成截图。
 
-GitHub Pages 链接待发布后填写：`https://hello-apl.github.io/-/`
+GitHub Pages 链接待发布后填写：`https://hello-apl.github.io/resume/`
 
 ## 6. 问题与后续计划
 

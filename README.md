@@ -25,7 +25,7 @@
 
 ## GitHub Pages 链接
 
-待发布后填写：`https://hello-apl.github.io/-/`
+待发布后填写：`https://hello-apl.github.io/resume/`
 
 ## 本地预览
 
