@@ -1,0 +1,30 @@
+[
+  {
+    "profile": "desktop",
+    "errors": [],
+    "layout": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "cards": 4,
+      "downloads": 6,
+      "skills": 4,
+      "evidence": 6,
+      "missingImages": [],
+      "pendingText": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "errors": [],
+    "layout": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "cards": 4,
+      "downloads": 6,
+      "skills": 4,
+      "evidence": 6,
+      "missingImages": [],
+      "pendingText": false
+    }
+  }
+]
