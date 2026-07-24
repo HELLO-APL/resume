@@ -2,29 +2,53 @@
   {
     "profile": "desktop",
     "errors": [],
+    "panelChecks": {
+      "profile": true,
+      "education": true,
+      "internship": true,
+      "projects": true,
+      "competition": true,
+      "research": true,
+      "skills": true,
+      "downloads": true
+    },
     "layout": {
       "scrollWidth": 1440,
       "clientWidth": 1440,
-      "cards": 4,
-      "downloads": 6,
-      "skills": 4,
+      "scrollY": 0,
+      "panels": 8,
+      "projectCards": 2,
+      "downloads": 5,
       "evidence": 6,
       "missingImages": [],
-      "pendingText": false
+      "hasPhone": true,
+      "hasSingleProofDownload": false
     }
   },
   {
     "profile": "mobile",
     "errors": [],
+    "panelChecks": {
+      "profile": true,
+      "education": true,
+      "internship": true,
+      "projects": true,
+      "competition": true,
+      "research": true,
+      "skills": true,
+      "downloads": true
+    },
     "layout": {
       "scrollWidth": 390,
       "clientWidth": 390,
-      "cards": 4,
-      "downloads": 6,
-      "skills": 4,
+      "scrollY": 0,
+      "panels": 8,
+      "projectCards": 2,
+      "downloads": 5,
       "evidence": 6,
       "missingImages": [],
-      "pendingText": false
+      "hasPhone": true,
+      "hasSingleProofDownload": false
     }
   }
 ]

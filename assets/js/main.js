@@ -1,82 +1,48 @@
 const data = window.siteData;
 
-function createElement(tag, className, text) {
-  const element = document.createElement(tag);
-  if (className) element.className = className;
-  if (text) element.textContent = text;
-  return element;
-}
-
-function renderSkills() {
-  const root = document.querySelector("#skillGrid");
-  data.skills.forEach((skill) => {
-    const card = createElement("article", "skill-card");
-    card.append(createElement("h3", "", skill.title));
-    const list = createElement("ul");
-    skill.items.forEach((item) => list.append(createElement("li", "", item)));
-    card.append(list);
-    root.append(card);
-  });
+function el(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text) node.textContent = text;
+  return node;
 }
 
 function renderProjects() {
   const root = document.querySelector("#projectList");
-  data.projects.forEach((project, index) => {
-    const card = createElement("article", "project-card");
-    if (index % 2 === 1) card.classList.add("reverse");
+  data.projects.forEach((project) => {
+    const card = el("article", "timeline-card");
+    card.append(el("p", "meta", `${project.period} · ${project.role}`));
+    card.append(el("h3", "", project.title));
+    card.append(el("p", "summary-text", project.summary));
+    const list = el("ul", "detail-list");
+    project.points.forEach((point) => list.append(el("li", "", point)));
+    card.append(list);
 
-    const media = createElement("div", "project-media");
-    const image = createElement("img");
-    image.src = project.image;
-    image.alt = project.imageAlt;
-    media.append(image);
-
-    const body = createElement("div", "project-body");
-    body.append(createElement("p", "project-meta", `${project.period} · ${project.role}`));
-    body.append(createElement("h3", "", project.title));
-    body.append(createElement("p", "", project.summary));
-    const list = createElement("ul", "highlight-list");
-    project.highlights.forEach((item) => list.append(createElement("li", "", item)));
-    body.append(list);
-
-    if (project.links) {
-      const links = createElement("div", "link-row");
-      project.links.forEach((link) => {
-        const anchor = createElement("a", "text-link", link.label);
-        anchor.href = link.href;
-        anchor.target = "_blank";
-        anchor.rel = "noreferrer";
-        links.append(anchor);
+    if (project.images) {
+      const gallery = el("div", "phone-gallery");
+      project.images.forEach((item) => {
+        const img = el("img");
+        img.src = item.src;
+        img.alt = item.alt;
+        gallery.append(img);
       });
-      body.append(links);
+      card.append(gallery);
     }
 
-    if (project.gallery) {
-      const gallery = createElement("div", "mini-gallery");
-      project.gallery.forEach((src) => {
-        const galleryImage = createElement("img");
-        galleryImage.src = src;
-        galleryImage.alt = `${project.title}界面截图`;
-        gallery.append(galleryImage);
-      });
-      body.append(gallery);
-    }
-
-    card.append(media, body);
     root.append(card);
   });
 }
 
-function renderEvidence() {
-  const root = document.querySelector("#evidenceGallery");
-  data.evidence.forEach((item) => {
-    const figure = createElement("figure", "evidence-card");
-    const img = createElement("img");
-    img.src = item.image;
+function renderCompetitionGallery() {
+  const root = document.querySelector("#competitionGallery");
+  data.competitionImages.forEach((item) => {
+    const figure = el("figure", "evidence-card");
+    const img = el("img");
+    img.src = item.src;
     img.alt = item.title;
-    const caption = createElement("figcaption");
-    caption.append(createElement("strong", "", item.title));
-    caption.append(createElement("span", "", item.caption));
+    const caption = el("figcaption");
+    caption.append(el("strong", "", item.title));
+    caption.append(el("span", "", item.note));
     figure.append(img, caption);
     root.append(figure);
   });
@@ -85,23 +51,44 @@ function renderEvidence() {
 function renderDownloads() {
   const root = document.querySelector("#downloadGrid");
   data.downloads.forEach((item) => {
-    const card = createElement("article", "download-card");
-    card.append(createElement("h3", "", item.title));
-    card.append(createElement("p", "", item.meta));
+    const card = el("article", "download-card");
+    card.append(el("h3", "", item.title));
+    card.append(el("p", "", item.meta));
     if (item.status === "available") {
-      const link = createElement("a", "button small", "下载");
+      const link = el("a", "button secondary small", "下载");
       link.href = item.href;
       link.download = "";
       card.append(link);
     } else {
       card.classList.add("pending");
-      card.append(createElement("span", "pending-label", "待补充"));
+      card.append(el("span", "pending-label", "待补充"));
     }
     root.append(card);
   });
 }
 
-renderSkills();
+function activatePanel(panelId) {
+  const target = document.querySelector(`#${panelId}`);
+  if (!target) return;
+  document.querySelectorAll(".content-panel").forEach((panel) => {
+    panel.classList.toggle("is-active", panel.id === panelId);
+  });
+  document.querySelectorAll(".nav-tab").forEach((tab) => {
+    tab.classList.toggle("is-active", tab.dataset.panel === panelId);
+  });
+  history.replaceState(null, "", `#${panelId}`);
+  document.querySelector(".resume-content").scrollTop = 0;
+}
+
+function setupNavigation() {
+  document.querySelectorAll(".nav-tab").forEach((tab) => {
+    tab.addEventListener("click", () => activatePanel(tab.dataset.panel));
+  });
+  const initial = location.hash.replace("#", "") || "profile";
+  activatePanel(initial);
+}
+
 renderProjects();
-renderEvidence();
+renderCompetitionGallery();
 renderDownloads();
+setupNavigation();

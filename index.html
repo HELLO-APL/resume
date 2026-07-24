@@ -3,131 +3,227 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>陈怡凡 | 金融科技与 AI 产品作品集</title>
+    <title>陈怡凡个人简历网站</title>
     <meta
       name="description"
-      content="陈怡凡的个人网站，展示金融科技、AI 产品、数据分析、创新创业比赛与项目证明材料。"
+      content="陈怡凡的个人简历网站，展示教育背景、实习经历、项目经历、比赛经历、科研经历、技能与证明材料。"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">
-        <span class="brand-mark">CY</span>
+      <a class="brand" href="#profile" aria-label="查看个人信息">
+        <span class="brand-mark">陈</span>
         <span>陈怡凡</span>
       </a>
-      <nav class="site-nav" aria-label="主导航">
-        <a href="#about">关于</a>
-        <a href="#skills">能力</a>
-        <a href="#projects">项目</a>
-        <a href="#awards">证明</a>
-        <a href="#contact">联系</a>
+      <nav class="site-nav" aria-label="简历导航">
+        <button class="nav-tab is-active" data-panel="profile">个人信息</button>
+        <button class="nav-tab" data-panel="education">教育背景</button>
+        <button class="nav-tab" data-panel="internship">实习经历</button>
+        <button class="nav-tab" data-panel="projects">项目经历</button>
+        <button class="nav-tab" data-panel="competition">比赛经历</button>
+        <button class="nav-tab" data-panel="research">科研经历</button>
+        <button class="nav-tab" data-panel="skills">技能荣誉</button>
+        <button class="nav-tab" data-panel="downloads">附件下载</button>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero section-pad">
-        <div class="hero-copy">
-          <p class="eyebrow">FinTech · AI Product · Data Analysis</p>
+    <main class="app-shell">
+      <aside class="resume-sidebar" aria-label="个人摘要">
+        <div class="profile-block">
+          <p class="eyebrow">个人简历</p>
           <h1>陈怡凡</h1>
-          <p class="hero-lead">
-            深圳大学南特金融科技学院学生，关注 AI 产品、金融科技应用与数据驱动的商业落地。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">查看项目</a>
-            <a class="button secondary" href="assets/files/chen-yifan-resume.pdf" download>下载简历</a>
+          <p class="position">深圳大学南特金融科技学院 · 金融科技专业</p>
+        </div>
+        <dl class="quick-info">
+          <div>
+            <dt>年级</dt>
+            <dd>大二</dd>
           </div>
+          <div>
+            <dt>GPA</dt>
+            <dd>3.61 / 4.5</dd>
+          </div>
+          <div>
+            <dt>均分</dt>
+            <dd>83.1</dd>
+          </div>
+          <div>
+            <dt>英语</dt>
+            <dd>四级 542 · 雅思模考 5.5</dd>
+          </div>
+        </dl>
+        <div class="contact-card">
+          <a href="tel:+8613798432903">电话：86-13798432903</a>
+          <a href="mailto:1361933959@qq.com">邮箱：1361933959@qq.com</a>
+          <a href="https://github.com/HELLO-APL/resume" target="_blank" rel="noreferrer">GitHub：HELLO-APL/resume</a>
         </div>
-        <aside class="hero-panel" aria-label="关键成果">
-          <p class="panel-label">Featured Achievement</p>
-          <h2>中国国际大学生创新大赛 2025 国赛银奖</h2>
-          <p>
-            在“狭路行者”项目推进中负责商业调研、财务预测、答辩与路演材料统筹。因阶段表现突出，负责人在国赛阶段将个人排位提升至
-            2/15。
-          </p>
-          <dl class="metric-grid">
-            <div>
-              <dt>国赛</dt>
-              <dd>银奖</dd>
+        <a class="button primary" href="assets/files/chen-yifan-resume.pdf" download>下载 PDF 简历</a>
+      </aside>
+
+      <section class="resume-content" aria-live="polite">
+        <section id="profile" class="content-panel is-active" data-title="个人信息">
+          <div class="panel-heading">
+            <p class="eyebrow">基本信息</p>
+            <h2>面向 HR 的个人概览</h2>
+          </div>
+          <div class="summary-grid">
+            <article class="summary-card">
+              <h3>个人定位</h3>
+              <p>
+                深圳大学南特金融科技学院金融科技专业学生，关注 AI 产品、金融科技应用、数据分析和商业落地表达。
+              </p>
+            </article>
+            <article class="summary-card">
+              <h3>经历关键词</h3>
+              <p>AI 审计产品、非遗商业平台、政府资政调研、创新创业比赛、合成虚拟人、Python 数据分析。</p>
+            </article>
+            <article class="summary-card">
+              <h3>求职展示重点</h3>
+              <p>能参与产品需求梳理、数据处理、商业调研、路演材料组织，并用清晰文档和可验证材料呈现项目成果。</p>
+            </article>
+          </div>
+          <div class="info-table">
+            <div><span>出生年月</span><strong>2005/11</strong></div>
+            <div><span>政治面貌</span><strong>共青团员</strong></div>
+            <div><span>联系电话</span><strong>86-13798432903</strong></div>
+            <div><span>邮箱</span><strong>1361933959@qq.com</strong></div>
+          </div>
+        </section>
+
+        <section id="education" class="content-panel" data-title="教育背景">
+          <div class="panel-heading">
+            <p class="eyebrow">教育背景</p>
+            <h2>深圳大学 · 南特金融科技学院</h2>
+          </div>
+          <article class="timeline-card">
+            <p class="meta">金融科技专业 · 大二</p>
+            <h3>课程与成绩</h3>
+            <div class="tag-row">
+              <span>GPA 3.61 / 4.5</span>
+              <span>均分 83.1</span>
+              <span>四级 542</span>
+              <span>雅思模考 5.5</span>
+              <span>阅读 6.5</span>
             </div>
-            <div>
-              <dt>排位</dt>
-              <dd>2/15</dd>
+            <ul class="detail-list">
+              <li>相关课程：数据结构（A）、程序设计基础（A）、大学计算机（A）。</li>
+              <li>金融相关课程：金融学（A+）、宏观经济学（A）、金融科技导论（A+）。</li>
+              <li>金融相关课程全部为英文授课、英文考试。</li>
+              <li>获得学院培优奖学金，赴法国南特高等商学院进行两周冬令营交流。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section id="internship" class="content-panel" data-title="实习经历">
+          <div class="panel-heading">
+            <p class="eyebrow">实习经历</p>
+            <h2>东亚银行深圳分行 · 数字化战略办公室</h2>
+          </div>
+          <article class="timeline-card">
+            <p class="meta">AI 审计产品助理 + AI 审计全英数据标注员 · 2026.04 - 2026.06</p>
+            <h3>AI 审计产品</h3>
+            <ul class="detail-list">
+              <li>参与 AI 审计产品设计流程，理解 AI 审计中的 OCR、MinerU 等技术栈和产品工作流。</li>
+              <li>前期承担 AI 审计数据标注工作，进行全英文阅读，并依据特定合规标准标注用户隐私数据信息。</li>
+              <li>后期利用开源项目，自主搭建 MinerU + 数据自主标注的自动化系统。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section id="projects" class="content-panel" data-title="项目经历">
+          <div class="panel-heading">
+            <p class="eyebrow">项目经历</p>
+            <h2>产品、调研与数据项目</h2>
+          </div>
+          <div id="projectList" class="card-stack"></div>
+        </section>
+
+        <section id="competition" class="content-panel" data-title="比赛经历">
+          <div class="panel-heading">
+            <p class="eyebrow">比赛经历</p>
+            <h2>中国国际大学生创新大赛（2025）</h2>
+          </div>
+          <article class="timeline-card">
+            <p class="meta">狭路行者 · 超小管径全地形自适应柔性驱动开拓先锋 · 2025.05 - 2025.10</p>
+            <h3>国家银奖项目经历</h3>
+            <div class="tag-row">
+              <span>商业组组长</span>
+              <span>答辩人</span>
+              <span>PPT 制作统筹人</span>
+              <span>国赛排位 2 / 15</span>
             </div>
+            <ul class="detail-list">
+              <li>主导爬虫机器人落地场景调研，统计 10 余家头部管道机器人公司的产品类型和业务分布。</li>
+              <li>结合机器人功能特点和市场竞争格局，锚定市政管道检测为核心应用方向，聚焦直径小于 50mm 的小管径场景构建差异化优势。</li>
+              <li>参与测算目标市场规模超 20 亿元；搭建公司财务预测模型，参考同类型企业盈利指标、产品定价及技术溢价，完成未来 5 年营收预测，预计首年营收 250 万元。</li>
+              <li>统筹路演 PPT 和商业计划书制作，围绕市场痛点、技术优势、业务落地、成果展示、未来展望组织项目路演表达。</li>
+              <li>先后参与广东中山大学省赛、河南郑州大学国赛答辩，精准回应商业与市场核心问题。因阶段表现突出，负责人在国赛阶段将个人排位提升至 2 / 15，助力团队获得国家银奖。</li>
+            </ul>
+          </article>
+          <div class="evidence-grid" id="competitionGallery"></div>
+        </section>
+
+        <section id="research" class="content-panel" data-title="科研经历">
+          <div class="panel-heading">
+            <p class="eyebrow">科研经历</p>
+            <h2>合成虚拟人用户</h2>
+          </div>
+          <article class="media-card">
             <div>
-              <dt>目标市场</dt>
-              <dd>20亿+</dd>
+              <p class="meta">指导老师：尼娜（深圳大学）、陆海兵（美国克拉拉大学）、胡楠（新加坡管理学院） · 2024.06 - 2024.08</p>
+              <h3>AI Agent 与政治倾向数据分析</h3>
+              <ul class="detail-list">
+                <li>进行文献调研，了解并分析 AI Agent 的研究发展现状，阅读 10 篇以上相关论文。</li>
+                <li>论文方向包括拍卖代理、模拟游戏人、辩论互动、模拟人类哲学思维等 multi / single AI Agent 研究。</li>
+                <li>共完成 3 次汇报任务，是团队中唯一完成所有汇报任务的成员。</li>
+                <li>根据 300+ 真实人的身份信息，包括政治倾向、性别、收入等，接入大语言模型 API 进行虚拟人合成。</li>
+                <li>输出虚拟人对美国不同党派的评价，用 Python 实现 Excel 表格输出，并分析不同身份特征的政治倾向分布。</li>
+                <li>使用 Matplotlib 绘制气泡图可视化展示。</li>
+              </ul>
             </div>
-          </dl>
-        </aside>
-      </section>
+            <img src="assets/images/synthetic-human-bubble-chart.jpg" alt="合成虚拟人用户项目气泡图" />
+          </article>
+        </section>
 
-      <section id="about" class="section-pad intro-band">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>把技术、金融和商业表达接到一起</h2>
-        </div>
-        <div class="about-grid">
-          <p>
-            我目前就读于深圳大学南特金融科技学院金融科技专业，学习方向覆盖金融学、程序设计、数据结构与金融科技导论。我的项目经历集中在
-            AI 产品、数据分析、商业调研和数字化平台搭建。
-          </p>
-          <p>
-            相比单纯展示经历，我更希望这个网站成为一个长期更新的项目档案：既能给 HR 快速了解我，也能让老师、同学和项目伙伴看到真实材料、项目证据和持续迭代。
-          </p>
-        </div>
-      </section>
+        <section id="skills" class="content-panel" data-title="技能荣誉">
+          <div class="panel-heading">
+            <p class="eyebrow">技能与荣誉</p>
+            <h2>能力清单与奖项</h2>
+          </div>
+          <div class="summary-grid">
+            <article class="summary-card">
+              <h3>编程能力</h3>
+              <p>有使用 Python 完成项目的经验，能够使用 Pandas、NumPy、re 等库进行数据处理。</p>
+            </article>
+            <article class="summary-card">
+              <h3>图像与数据工具</h3>
+              <p>了解 OpenCV、Pillow 等图像处理工具库，使用 Matplotlib 完成数据可视化。</p>
+            </article>
+            <article class="summary-card">
+              <h3>常用软件</h3>
+              <p>Pandas、VS Code、Excel、PPT，并具备面向路演和报告的材料整理能力。</p>
+            </article>
+            <article class="summary-card">
+              <h3>荣誉及奖项</h3>
+              <p>中国国际大学生创新大赛（2025）国家银奖；学院培优奖学金（法国南特高等商学院冬令营交流）。</p>
+            </article>
+          </div>
+        </section>
 
-      <section id="skills" class="section-pad">
-        <div class="section-heading compact">
-          <p class="eyebrow">Skills</p>
-          <h2>能力方向</h2>
-        </div>
-        <div class="skill-grid" id="skillGrid"></div>
-      </section>
-
-      <section id="projects" class="section-pad projects-section">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>项目与作品</h2>
-        </div>
-        <div id="projectList" class="project-list"></div>
-      </section>
-
-      <section class="section-pad gallery-section" aria-labelledby="gallery-title">
-        <div class="section-heading compact">
-          <p class="eyebrow">Selected Evidence</p>
-          <h2 id="gallery-title">创赛项目高含金量截图</h2>
-        </div>
-        <div class="evidence-gallery" id="evidenceGallery"></div>
-      </section>
-
-      <section id="awards" class="section-pad awards-section">
-        <div class="section-heading">
-          <p class="eyebrow">Awards & Downloads</p>
-          <h2>证明材料与附件下载</h2>
-          <p>
-            这里集中放置可公开材料，方便 HR 或老师直接下载核验。奖学金证明后续补充后可替换占位卡。
-          </p>
-        </div>
-        <div class="download-grid" id="downloadGrid"></div>
-      </section>
-
-      <section id="contact" class="section-pad contact-section">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>欢迎通过 GitHub 或邮箱联系我</h2>
-          <p>如果需要进一步了解项目细节、比赛材料或实习经历，可以通过以下公开方式联系。</p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="https://github.com/HELLO-APL/resume" target="_blank" rel="noreferrer">GitHub 仓库</a>
-          <a class="button secondary" href="mailto:1361933959@qq.com">发送邮件</a>
-        </div>
+        <section id="downloads" class="content-panel" data-title="附件下载">
+          <div class="panel-heading">
+            <p class="eyebrow">附件下载</p>
+            <h2>简历与证明材料</h2>
+            <p>附件用于 HR 或教师核验。奖学金证明等待后续提供后再补充。</p>
+          </div>
+          <div class="download-grid" id="downloadGrid"></div>
+        </section>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 陈怡凡. Built as a maintainable personal portfolio for GitHub Pages.</p>
+      <p>© 2026 陈怡凡 · 个人简历网站</p>
     </footer>
 
     <script src="assets/js/site-data.js"></script>
