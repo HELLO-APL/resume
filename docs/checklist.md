@@ -36,5 +36,5 @@
 - [x] docs/checklist.md 已完成。
 - [x] report/final-report.md 已完成初稿。
 - [ ] screenshots/ 至少包含桌面端首页、手机端首页、GitHub Pages 和 Checklist 截图。
-- [ ] Git 仓库至少有 3 次有意义 Commit。
+- [x] Git 仓库至少有 3 次有意义 Commit。
 - [ ] TA-Claw 预览无误并完成二次确认。
