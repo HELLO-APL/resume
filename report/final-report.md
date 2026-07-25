@@ -42,15 +42,15 @@ AI 协助完成了作业要求梳理、材料抽取、页面结构建议、静�
 
 ## 5. 验证结果
 
-当前已完成本地静态网站和过程文档。发布后需要补充：
+当前已完成本地静态网站、过程文档和 GitHub Pages 发布验证。
 
-- GitHub Pages 正式链接；
-- 桌面端首页截图；
-- 手机端首页截图；
-- GitHub Pages 公开页面或部署成功截图；
-- Checklist 完成截图。
+- GitHub Pages 正式链接：`https://hello-apl.github.io/resume/`
+- 桌面端首页截图：`screenshots/homepage-desktop.png`
+- 手机端首页截图：`screenshots/homepage-mobile.png`
+- GitHub Pages 公开页面截图：`screenshots/github-pages.png`
+- Checklist 截图：`screenshots/checklist.png`
 
-GitHub Pages 链接待发布后填写：`https://hello-apl.github.io/resume/`
+线上验证结果：页面可访问，标题为“陈怡凡个人简历网站”，共 8 个导航面板，线上图片加载成功。
 
 ## 6. 问题与后续计划
 

@@ -19,7 +19,7 @@
 - [x] GitHub 仓库链接已配置为公开仓库地址。
 - [x] 邮箱链接可触发邮件客户端。
 - [x] PDF 下载链接已完成本地文件存在性检查。
-- [ ] GitHub Pages 正式链接可在无痕窗口打开。
+- [x] GitHub Pages 正式链接可在无痕窗口打开。
 
 ## 显示
 
@@ -36,6 +36,6 @@
 - [x] docs/design.md 已完成。
 - [x] docs/checklist.md 已完成。
 - [x] report/final-report.md 已完成初稿。
-- [ ] screenshots/ 至少包含桌面端首页、手机端首页、GitHub Pages 和 Checklist 截图。
+- [x] screenshots/ 至少包含桌面端首页、手机端首页、GitHub Pages 和 Checklist 截图。
 - [x] Git 仓库至少有 3 次有意义 Commit。
 - [ ] TA-Claw 预览无误并完成二次确认。

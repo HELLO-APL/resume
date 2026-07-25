@@ -43,26 +43,16 @@ GitHub 仓库：
 
 ### 4.1 GitHub Pages 发布
 
-当前预期 Pages 链接：
+GitHub Pages 已发布成功：
 
 `https://hello-apl.github.io/resume/`
 
-如果访问仍是 404，请在 GitHub 仓库中操作：
-
-1. 打开 `https://github.com/HELLO-APL/resume`
-2. 进入 `Settings`
-3. 进入 `Pages`
-4. 在 `Build and deployment` 中将 `Source` 设置为 `GitHub Actions`
-5. 回到 `Actions`
-6. 重新运行 `Deploy static site to GitHub Pages`
-7. 等待成功后，用无痕窗口打开 `https://hello-apl.github.io/resume/`
-
-成功后需要补：
+发布证据已保存为：
 
 - `screenshots/github-pages.png`
-- `README.md` 中确认 Pages 链接
-- `report/final-report.md` 中确认 Pages 链接
-- `docs/checklist.md` 中勾选 GitHub Pages 相关项目
+- `README.md` 已记录正式链接
+- `report/final-report.md` 已记录正式链接和验证结果
+- `docs/checklist.md` 已勾选 GitHub Pages 相关项目
 
 ### 4.2 TA-Claw 提交
 
@@ -84,7 +74,7 @@ GitHub 仓库：
 - [x] 桌面端首页截图已保存。
 - [x] 手机端首页截图已保存。
 - [x] Checklist 截图已保存。
-- [ ] GitHub Pages 正式链接可访问。
-- [ ] GitHub Pages 截图已保存为 `screenshots/github-pages.png`。
+- [x] GitHub Pages 正式链接可访问。
+- [x] GitHub Pages 截图已保存为 `screenshots/github-pages.png`。
 - [ ] TA-Claw 预览无误。
 - [ ] TA-Claw 二次确认提交成功。
